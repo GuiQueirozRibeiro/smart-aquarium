@@ -1,0 +1,11 @@
+{
+  "title": "Acuario Inteligente",
+  "adjust_temperature": "Ajustar la temperatura",
+  "change_temperature": "Cambiar la temperatura",
+  "send_success": "Temperatura enviada exitosamente",
+  "very_cold": "Muy frio",
+  "very_hot": "Muy caliente",
+  "no_temperature": "No se ha proporcionado ninguna temperatura",
+  "erro_occurred": "¡Ocurrió un error!",
+  "unexpected_error": "¡Ocurrio un error inesperado!"
+}

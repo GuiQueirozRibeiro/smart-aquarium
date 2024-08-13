@@ -1,0 +1,11 @@
+{
+  "title": "Smart Aquarium",
+  "adjust_temperature": "Adjust temperature",
+  "change_temperature": "Change temperature",
+  "send_success": "Temperature sent successfully",
+  "very_cold": "Very cold",
+  "very_hot": "Very hot",
+  "no_temperature": "No temperature provided",
+  "erro_occurred": "An error occurred!",
+  "unexpected_error": "An unexpected error occurred!"
+}
