@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "330471669197",
+    "firebase_url": "https://smart-refrigerator-9ab9d-default-rtdb.firebaseio.com",
+    "project_id": "smart-refrigerator-9ab9d",
+    "storage_bucket": "smart-refrigerator-9ab9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330471669197:android:42406a49e67f8d56545884",
+        "android_client_info": {
+          "package_name": "br.com.guilherme_queiroz.smart_refrigerator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa5Crvrudle4TgKKLCzwRwKDNati2Dnew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

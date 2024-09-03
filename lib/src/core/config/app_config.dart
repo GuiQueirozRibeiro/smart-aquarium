@@ -2,11 +2,11 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:smart_aquarium/src/core/config/app_manager.dart';
-import 'package:smart_aquarium/src/core/config/app_preferences.dart';
-import 'package:smart_aquarium/src/core/config/inherited_app_config.dart';
-import 'package:smart_aquarium/src/core/enums/app_theme_mode.dart';
-import 'package:smart_aquarium/src/core/theme/app_theme.dart';
+import 'package:smart_refrigerator/src/core/config/app_manager.dart';
+import 'package:smart_refrigerator/src/core/config/app_preferences.dart';
+import 'package:smart_refrigerator/src/core/config/inherited_app_config.dart';
+import 'package:smart_refrigerator/src/core/enums/app_theme_mode.dart';
+import 'package:smart_refrigerator/src/core/theme/app_theme.dart';
 
 // Core module imports
 

@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:localization/localization.dart';
 import 'package:provider/provider.dart';
-import 'package:smart_aquarium/src/app/presentation/providers/aquarium_provider.dart';
-import 'package:smart_aquarium/src/app/presentation/widgets/circular_slider.dart';
-import 'package:smart_aquarium/src/core/utils/dialog_mixin.dart';
+import 'package:smart_refrigerator/src/app/presentation/providers/refrigerator_provider.dart';
+import 'package:smart_refrigerator/src/app/presentation/widgets/circular_slider.dart';
+import 'package:smart_refrigerator/src/core/utils/dialog_mixin.dart';
 
-class TemperaturePage extends StatefulWidget {
-  const TemperaturePage({super.key});
+class DashboardPage extends StatefulWidget {
+  const DashboardPage({super.key});
 
-  static route() => MaterialPageRoute(builder: (_) => const TemperaturePage());
+  static route() => MaterialPageRoute(builder: (_) => const DashboardPage());
 
   @override
-  State<TemperaturePage> createState() => _TemperaturePageState();
+  State<DashboardPage> createState() => _DashboardPageState();
 }
 
-class _TemperaturePageState extends State<TemperaturePage> with DialogMixin {
+class _DashboardPageState extends State<DashboardPage> with DialogMixin {
   double _currentTemperature = 24.0;
 
   Future<void> changeTemperature() async {
-    final aquariumProvider = Provider.of<AquariumProvider>(
+    final aquariumProvider = Provider.of<RefrigeratorProvider>(
       context,
       listen: false,
     );
@@ -49,7 +49,7 @@ class _TemperaturePageState extends State<TemperaturePage> with DialogMixin {
               tag: 'temperature',
               child: CircularSlider(
                 initialValue:
-                    Provider.of<AquariumProvider>(context, listen: false)
+                    Provider.of<RefrigeratorProvider>(context, listen: false)
                         .temperature
                         .value
                         .toDouble(),

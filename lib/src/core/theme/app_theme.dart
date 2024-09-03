@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:smart_aquarium/src/core/theme/app_palette.dart';
-import 'package:smart_aquarium/src/core/theme/app_text_style.dart';
+import 'package:smart_refrigerator/src/core/theme/app_palette.dart';
+import 'package:smart_refrigerator/src/core/theme/app_text_style.dart';
 
 class AppTheme {
   // Light Theme

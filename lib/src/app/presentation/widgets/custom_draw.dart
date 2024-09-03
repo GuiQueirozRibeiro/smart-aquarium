@@ -2,7 +2,7 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:smart_aquarium/src/core/utils/circle_utils.dart';
+import 'package:smart_refrigerator/src/core/utils/circle_utils.dart';
 
 class CustomArc extends StatelessWidget {
   const CustomArc({super.key});

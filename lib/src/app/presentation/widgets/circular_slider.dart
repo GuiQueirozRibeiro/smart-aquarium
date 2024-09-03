@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
-import 'package:smart_aquarium/src/app/presentation/widgets/custom_draw.dart';
-import 'package:smart_aquarium/src/core/utils/circle_utils.dart';
+import 'package:smart_refrigerator/src/app/presentation/widgets/custom_draw.dart';
+import 'package:smart_refrigerator/src/core/utils/circle_utils.dart';
 
 class CircularSlider extends StatefulWidget {
   final double initialValue;

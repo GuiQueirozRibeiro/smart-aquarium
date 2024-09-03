@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:gif/gif.dart';
 import 'package:localization/localization.dart';
-import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
-import 'package:smart_aquarium/src/app/presentation/pages/temperature_page.dart';
-import 'package:smart_aquarium/src/app/presentation/providers/aquarium_provider.dart';
-import 'package:smart_aquarium/src/core/theme/app_palette.dart';
+import 'package:smart_refrigerator/src/app/presentation/pages/dashboard_page.dart';
+import 'package:smart_refrigerator/src/app/presentation/providers/refrigerator_provider.dart';
+import 'package:smart_refrigerator/src/core/theme/app_palette.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,10 +13,24 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
+  late GifController gifController;
+
+  @override
+  void initState() {
+    super.initState();
+    gifController = GifController(vsync: this);
+  }
+
+  @override
+  void dispose() {
+    gifController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    final AquariumProvider aquariumProvider = Provider.of(context);
+    final RefrigeratorProvider refrigeratorProvider = Provider.of(context);
     final bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
 
     return Scaffold(
@@ -37,20 +51,21 @@ class _HomePageState extends State<HomePage> {
               "title".i18n(),
               style: Theme.of(context).textTheme.headlineLarge,
             ),
-            Lottie.asset(
-              "lib/assets/animations/aquarium.json",
-              fit: BoxFit.fill,
+            Gif(
+              image: const AssetImage('lib/assets/animations/refrigerator.gif'),
+              controller: gifController,
+              autostart: Autostart.loop,
             ),
             const SizedBox(height: 20),
             GestureDetector(
-              onTap: () => Navigator.push(context, TemperaturePage.route()),
+              onTap: () => Navigator.push(context, DashboardPage.route()),
               child: Hero(
                 tag: 'temperature',
                 child: CircleAvatar(
                   radius: 80,
                   backgroundColor: Colors.white,
                   child: ValueListenableBuilder(
-                    valueListenable: aquariumProvider.temperature,
+                    valueListenable: refrigeratorProvider.temperature,
                     builder: (context, value, _) {
                       return Text(
                         '$value°C',

@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:smart_aquarium/src/core/config/app_config.dart';
-import 'package:smart_aquarium/src/core/enums/app_theme_mode.dart';
+import 'package:smart_refrigerator/src/core/config/app_config.dart';
+import 'package:smart_refrigerator/src/core/enums/app_theme_mode.dart';
 
 class AppPreferences {
   late AppThemeMode themeMode;

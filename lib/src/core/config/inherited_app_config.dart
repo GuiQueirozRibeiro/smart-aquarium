@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:smart_aquarium/src/core/config/app_manager.dart';
-import 'package:smart_aquarium/src/core/enums/app_theme_mode.dart';
+import 'package:smart_refrigerator/src/core/config/app_manager.dart';
+import 'package:smart_refrigerator/src/core/enums/app_theme_mode.dart';
 
 /// An inherited widget that saves provides current mode, theme, dark theme and
 /// brightness to its children.
